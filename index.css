@@ -111,61 +111,13 @@ nav li:hover{
     
 
 }
-
+.sidebar div p{
+    font-size:medium;
+    color:white;
+    text-align: center;
+    padding: 10%;
+   
+}
 .redes{
     margin-top: 20%;
-}
-
-@media (max-width: 1450px){
-    
-    .sidebar div p{
-        font-size:medium;
-        color:white;
-        text-align: center;
-        padding: 10%;
-       
-    }
-    
-}
-
-@media (max-width: 1280px){
-    
-
-    
-
-
-    
-}
-
-@media (max-width: 900px){
-   
-}
-
-@media (max-width: 800px){
-    
-    
-
-    
-
-
-    
-}
-
-
-@media (max-width: 540px){
-    .menu_escritorio{
-        display: none;
-    }
-    .menu-mobile{
-        display: block;
-    }
-    .sidebar div p{
-        font-size:small;
-        color:white;
-        text-align: center;
-        padding: 10%;
-       
-    }
-
-   
 }
