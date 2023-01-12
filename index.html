@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><!-- lenguaje del documento--> 
+<head>
+    <meta charset="UTF-8"><!--Formato de codificacion de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Formato para sitio responsivo -->
+    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="index.css"><!--Archivo de estilo CSS -->
+</head>
+<body>
+    <img class="logo" src="img/logo.png">   
+   
+    <div class="row"> <!--contenedor principal-->
+        <div class="menu_escritorio"> <!--Menu para pantallas grandes-->
+            <nav>
+                <ul class="menu"> 
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="RanchoFortuna.html">Nosotros</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Instalaciones.html">Instalaciones</a></li>
+                    <li><a href="Contacto.html">Contáctanos</a></li>
+            
+                </ul>
+            </nav>
+            
+        </div> 
+        <div class="menu-celular">
+            <div class="menu-open-close">
+                <div class="header">
+                    <a href="" class="logo"><img src="img/logo.svg" width="64" alt=""></a>
+                    <a href="#" id="buttonOpenCloseMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                    </a>
+                </div>
+                <div id="menu-mobile-items" class="menu-mobile-closed">
+                    <ul >
+                        <li>
+                            <a href="">HOME</a>
+                        </li>
+                        <li>
+                            <a href="">WORK</a>
+                        </li>
+                        <li>
+                            <a href="">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="sidebar">
+                <div class="redes" align="center">
+                    <img width="90%" src="img/redes.jpg" usemap="#mapa" data-imgsize="192x59" id="map">
+                    
+                    <map name="mapa" >
+                        <!--Area de los mapas y coordenadas que dirigen hacia un enlace web abriendo una nueva pestaña del navegador-->
+                        <area shape="poly" coords="4,4,57,4,55,55,4,55" href="https://www.facebook.com/" target="_blank" title="Facebook">
+                        <area shape="poly" coords="70,4,125,4,125,55,70,55" href="https://twitter.com/"target="_blank" title="Twitter">
+                        <area shape="poly" coords="134,4,186,4, 186,55, 134,55" href="https://youtube.com/"target="_blank" title="Youtube">
+                    </map>
+                </div>
+                <script src="js/img-map.js">
+                    
+                </script>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus, nulla sit amet fermentum lacinia, nibh dui tincidunt quam, eget finibus ipsum felis nec tortor. Suspendisse justo sapien, luctus sit amet dui non, lobortis venenatis dolor.</p>
+                </div>
+            </div>
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus, nulla sit amet fermentum lacinia, nibh dui tincidunt quam, eget finibus ipsum felis nec tortor. Suspendisse justo sapien, luctus sit amet dui non, lobortis venenatis dolor.</h1>
+            
+            
+        </div>
+       
+    </div>
+   
+   
+
+    
+</body>
+
+<footer>
+    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+  </footer>
+</html>
