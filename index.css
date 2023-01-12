@@ -1,64 +1,171 @@
-/*Script para hacer cambiar de tamaño el mapa */
-class ImageResize {
-    /*MEtodo constructor con los atributos de la imagen*/
-    constructor(config){
-        const{ width, height, element } = config;
-        this.imageW = width;
-        this.imageH = height;
-        this.imageMap = document.querySelector(element);
-        const mapId = this.imageMap.getAttribute('usemap');
-        const mapElem = `map[name="${mapId.substring(1, mapId.length)}"]`;
-        const area = document.querySelector(mapElem).children;
-        this.areaArray = Array.from(area);
-        window.addEventListener('resize', this.resizeEvent);
-        setTimeout(this.imgMap, 500);
-    }
-    /*Funcion para obtener las coordenadas del mapa */
-    getCoordinates = (elem) => {
-        let areaCords = elem.dataset.coords;
+*{
+    margin:0;padding:0;box-sizing:border-box;font-size:0;
+} 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.logo{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
     
-        if (!areaCords) {
-          areaCords = elem.getAttribute('coords');
     
-          elem.dataset.coords = areaCords;
-        }
-    
-        return areaCords;
-    };
-    /*Funcion para calcular las proporciones de la imagen */
-    imgMap = () => {
-        this.wPercent = this.imageMap.offsetWidth / 100;
-        this.hPercent = this.imageMap.offsetHeight / 100;
-    
-        this.areaArray.forEach(this.areaLoop);
-      };
-    /*Funcion para obtener las coordenadas especificadas del mapa y agregarlo a un arreglo */
-    areaLoop = (area) => {
-        const coordinates = this.getCoordinates(area).split(',');
-        const coordsPercent = coordinates.map(this.mapCoords).join();
-    
-        area.setAttribute('coords', coordsPercent);
-    };
-    /*Funcion para obtener las nuevas coordenadas basadas en el nuevo tamanio de la imagen */
-    mapCoords = (coordinate, index) => {
-        const parseCord = parseInt(coordinate, 10);
-    
-        return index % 2 === 0
-          ? this.coordinatesMath(parseCord, this.imageW, this.wPercent)
-          : this.coordinatesMath(parseCord, this.imageH, this.hPercent);
-    };
-    /*Funcion para establecer las nuevas coordenadas de la imagen original */
-    coordinatesMath = (coordinates, imgVal, percentVal) =>
-        (coordinates / imgVal) * 100 * percentVal;
 
-    /*Cambio de tamanio de la imagen */
-    resizeEvent = () => {
-        this.imgMap();
-    };
 }
-/*Llamada a la funcion para reescalar la imagen */
-const resizeImg = new ImageResize({
-    width: 192,
-    height: 59,
-    element : '#map'
-    })
+.contenido{
+    background-image: url(img/campo.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    width:100%;
+    height:100%;
+
+}
+nav{
+    
+    margin-left: 0%;
+    position: relative;
+    width:100%;
+}
+nav a {
+    
+    padding: 0%;
+    margin: 0%;
+    font-size:5%;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT';
+    color: black;
+}
+nav li{
+    display: inline-block;
+    width: 20%;
+    height: 25%;
+    padding: 1%;
+    text-align: center;
+    position: relative;
+    background-color: #638F2B;
+    font-style: italic;
+    text-size-adjust: auto;
+}
+
+.menu li a{
+    font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    font-weight: bold;
+}
+.menu li :hover{
+    color:#D0DFB9 ;
+}
+nav li:hover{
+    
+    background-color:#0C3507;
+}
+.menu-celular{
+    display: none;
+}
+.menu-celular a:hover svg{
+    fill: var(--highlight-color);
+}
+.menu-celular .header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.menu-celular .header .logo{
+    flex-grow: 2;
+    text-align: center;
+}
+.menu-celular ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.menu-celular ul li{
+    text-align: center;
+}
+.menu-celular ul li a{
+    display: block;
+    padding: 10px 0;
+}
+.menu-mobile-closed{
+    display: none;
+}
+.sidebar{
+    margin-left: 0%;
+    margin-top: 0px;
+    padding: 0;
+    width: 20%;
+    position: relative;
+    height: 80%;
+    overflow:auto;
+    background-image: url(img/sidebar.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    
+
+}
+
+.redes{
+    margin-top: 20%;
+}
+
+@media (max-width: 1450px){
+    
+    .sidebar div p{
+        font-size:medium;
+        color:white;
+        text-align: center;
+        padding: 10%;
+       
+    }
+    
+}
+
+@media (max-width: 1280px){
+    
+
+    
+
+
+    
+}
+
+@media (max-width: 900px){
+   
+}
+
+@media (max-width: 800px){
+    
+    
+
+    
+
+
+    
+}
+
+
+@media (max-width: 540px){
+    .menu_escritorio{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .sidebar div p{
+        font-size:small;
+        color:white;
+        text-align: center;
+        padding: 10%;
+       
+    }
+
+   
+}
