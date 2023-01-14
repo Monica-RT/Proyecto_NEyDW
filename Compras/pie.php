@@ -1,6 +1,0 @@
-<?php
-?>
-    </section>
-</body>
-
-</html>
