@@ -228,6 +228,7 @@ body{
     width: 330px;
     height: 680px;
     border-radius: 6px;
+    background-color: #54a0d77a;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px;
