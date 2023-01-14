@@ -277,22 +277,8 @@ footer p{
     color: #D0DFB9;
     text-align: center;
 }
-@media screen and (max-width:400px){
-=======
-footer{
-    position: fixed;
-    background: #0C3507;
-    width: 100%;
-    height:30px;
-    bottom: 0%;
-   
-}
-footer p{
-    font-size: medium;
-    color: #D0DFB9;
-    text-align: center;
-}
-@media screen and (max-width:500px){
+
+@media screen and (max-width:540px){
     .menu_escritorio{
         display: none;
     }
