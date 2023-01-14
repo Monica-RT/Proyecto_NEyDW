@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><!-- lenguaje del documento--> 
+<head>
+    <meta charset="UTF-8"><!--Formato de codificacion de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Formato para sitio responsivo -->
+    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="index.css"><!--Archivo de estilo CSS -->
+</head>
+<body>
+    <img class="logo" src="img/logo.png">   
+   
+    <div class="row"> <!--contenedor principal-->
+        <div class="menu_escritorio"> <!--Menu para pantallas grandes-->
+            <nav>
+                <ul class="menu"> 
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="RanchoFortuna.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="Productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="Instalaciones.html">Instalaciones</a>
+                    </li>
+                    <li>
+                        <a href="Contacto.html">Contáctanos</a>
+                    </li>
+            
+                </ul>
+            </nav>
+            
+        </div> 
+        <div class="menu-celular">
+            <div class="menu-open-close">
+                <div class="header">
+                    <a href="#" id="buttonOpenCloseMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#0C3507"><path d="M0 0h24v24H0z" fill="#638F2B"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                    </a>
+                </div>
+                <div id="menu-mobile-items" class="menu-mobile-closed">
+                    <ul >
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="RanchoFortuna.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="Productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="Instalaciones.html">Instalaciones</a>
+                        </li>
+                        <li>
+                            <a href="Contacto.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contenido">
+            
+            <div class="sidebar">
+                <div class="redes" align="center">
+                    <img width="90%" src="img/redes.jpg" usemap="#mapa" data-imgsize="192x59" id="map">
+                    
+                    <map name="mapa" >
+                        <!--Area de los mapas y coordenadas que dirigen hacia un enlace web abriendo una nueva pestaña del navegador-->
+                        <area shape="poly" coords="4,4,57,4,55,55,4,55" href="https://www.facebook.com/" target="_blank" title="Facebook">
+                        <area shape="poly" coords="70,4,125,4,125,55,70,55" href="https://twitter.com/"target="_blank" title="Twitter">
+                        <area shape="poly" coords="134,4,186,4, 186,55, 134,55" href="https://youtube.com/"target="_blank" title="Youtube">
+                    </map>
+                </div>
+                <!--Script para escalar el mapa de la imagen-->
+                <script src="js/img-map.js">                   
+                </script>
+                <div>
+                    <p>¡Síguenos en nuestras redes sociales!</p>
+                </div>
+            </div>
+            <div id="content">
+                <h1 class="encabezados">Contáctanos</h1>
+                <section id="Informacion">
+                    <p>
+                        <span class="texto-contacto-titulo">Rancho Fortuna </span><br>
+                        Av. Universidad 3000, Ciudad Universitaria , Col. Universidad Nacional Autónoma de México, Coyoacán, C.P. 4510, México,CDMX
+                    </p>
+                    <p>
+                        <span class="texto-contacto-titulo">Teléfonos </span><br>
+                        <a href="tel:+52 55 12 22 24 93">+52 (55) 12 22 24 93</a><br>
+                        <a href="tel:+52 55 88 15 15 97">+52 (55) 88 15 15 97</a>
+                    </p>
+                    <p>
+                        <span class="texto-contacto-titulo">Email</span><br>
+                        <a href="mailto:atencionaclientes@ranchofortuna.com.mx">atencionaclientes@ranchofortuna.com.mx</a>
+                    </p>
+                    <form id="formulario"method = get action = Pag.php>
+                        <div class="preguntas">
+                            <label for="nombreReal">Nombre</label>
+                            <input class="input" type="text" name="nombreReal">
+                        </div>
+                        <div class="preguntas">
+                            <label for ="usr_sexo">Sexo</br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspHombre<input type = radio name =usr_edad id=radio>&nbsp&nbsp
+                                Mujer<input type = radio name =usr_edad id=radio>&nbsp&nbsp
+                                Otro<input type = radio name =usr_edad id=radio>&nbsp&nbsp
+                            </label>
+                        </div>
+                        <div class="preguntas">
+                            <label for ="usr_interes">Me interesa</br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaballos<input type = checkbox name =usr_edad id=radio>&nbsp&nbsp
+                                Vacas<input type = checkbox name =usr_edad id=radio>&nbsp&nbsp
+                                Equipo<input type = checkbox name =usr_edad id=radio>&nbsp&nbsp
+                            </label>
+                        </div>
+                        <div class="preguntas">
+                            <label for="emailReal">Email</label>
+                            <input class="input" type="email" name="emailReal">
+                        </div>
+                        <div class="preguntas">
+                            <label for="telReal">Teléfono</label>
+                            <input class="input" type="tel" name="telReal">
+                        </div>
+                        <div class="preguntas">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="input" name="mensaje" rows="15"></textarea>
+                        </div>
+                        <div class="preguntas">
+                            <button class="boton-formulario" type="submit" data-loading="Enviando..." data-send="Enviar Mensaje"><span>Enviar mensaje</span></button>
+                            <div id="feedback"></div>
+                        </div>
+                        </form>
+                </section>
+            </div>
+            <script type="text/javascript" src="js/contacto.js">
+
+            </script>
+    
+           
+            
+            
+        </div>
+       
+    </div>
+    <div id="screen">
+    </div>
+    <script src="js/pantalla.js">                   
+    </script>
+
+   
+   
+<footer>
+    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+  </footer>
+</html>
+    
+</body>
+
+
