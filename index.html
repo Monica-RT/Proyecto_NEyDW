@@ -7,12 +7,16 @@
     <link rel="stylesheet" type="text/css" href="index.css"><!--Archivo de estilo CSS -->
 </head>
 <body>
-    <img class="logo" src="img/logo.png">   
+    <!--Imagen del logo de la empresa con nombres como se especifico en instrucciones-->
+      
    
     <div class="row"> <!--contenedor principal-->
+        <img class="logo" src="img/logo-nombres.png"> 
         <div class="menu_escritorio"> <!--Menu para pantallas grandes-->
             <nav>
+                <!--Lista no irdenada para menu-->
                 <ul class="menu"> 
+                    <!--Items de lista con los enlaces a las diferentes paginas del sitio-->
                     <li>
                         <a href="index.html">Inicio</a>
                     </li>
@@ -33,11 +37,15 @@
             </nav>
             
         </div> 
+        <!--Menu para dispositivos moviles-->
         <div class="menu-celular">
             <div class="menu-open-close">
+                <!--Seccion que contiene el boton de menu-->
                 <div class="header">
+                    <!--Se añade un hipervinculo para que el menu se despliegue al hacer click-->
                     <a href="#" id="buttonOpenCloseMenu">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#0C3507"><path d="M0 0h24v24H0z" fill="#638F2B"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                        <!--Se añade un gráfico vectorial para que el boton de menu no se pixelee--> 
+                        <img src="img/menu-icono.png" alt="" width="24px" >
                     </a>
                 </div>
                 <div id="menu-mobile-items" class="menu-mobile-closed">
@@ -78,30 +86,42 @@
                 <script src="js/img-map.js">                   
                 </script>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus, nulla sit amet fermentum lacinia, nibh dui tincidunt quam, eget finibus ipsum felis nec tortor. Suspendisse justo sapien, luctus sit amet dui non, lobortis venenatis dolor.</p>
+                    <p>¡Síguenos en nuestras redes sociales!</p>
                 </div>
             </div>
-            
-            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus, nulla sit amet fermentum lacinia, nibh dui tincidunt quam, eget finibus ipsum felis nec tortor. Suspendisse justo sapien, luctus sit amet dui non, lobortis venenatis dolor.</p>
-            
+            <div id="content">
+                <h1 class="encabezados">Bienvenidos</h1>
+                
+                <section id="Informacion">
+                    <p class="texto-bienvenida">
+                    
+                    Te damos la más cordial bienvenida a nuestro sitio web Rancho Fortuna. Aquí encontrarás información relevante acerca de nuestros productos y sobre nuestra pasión por los caballos pura sangre y cuarto de milla.
+                    </p> 
+                    <p class="texto-bienvenida">
+                        El cuidado profesional y especializado de nuestros ejemplares nos ha convertido en un prestigiado criadero de excelencia en el que puedes confiar. Bienvenidos al arte más elevado de la naturaleza y la crianza.
+                    </p>
+                    <img src="img/rancho.jpg" alt="" id="imagen-inicio">
+                </section>
+            </div>
             
             
             
         </div>
-       
+        
     </div>
-    <div id="screen">
-    </div>
+    
     <script src="js/pantalla.js">                   
     </script>
-
-   
-   
+    
+    
+    
+    
+    
 
     
 </body>
-
 <footer>
     <p>©Copyright 2050 by nobody. All rights reversed.</p>
-  </footer>
+</footer>
+
 </html>
