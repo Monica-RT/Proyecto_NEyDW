@@ -1,11 +1,8 @@
 *{
     margin:0;padding:0;box-sizing:border-box;font-size:0;
 } 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+html,body { height: 100%; }
+
 .logo{
     padding: 0%;
     margin: 0%;
@@ -14,6 +11,7 @@
     
 
 }
+
 .contenido{
     background-image: url(img/campo.png);
     background-repeat: no-repeat;
@@ -24,17 +22,16 @@
     position: absolute;
 
 }
-.contenido .texto{
-    text-align: center;
-    font-size: small;
-    padding-top: 20%;
+#Informacion .texto-bienvenida{
+    text-align: justify;
+    font-size: large;
+    margin-top: 3%;
     color: black;
     position: relative;
     background-color: #ffffff00;
     width: 80%;
-    margin-left: 20%;
-    padding-top: 0%;
-
+    margin-left: 10%;
+    font-family:'Gill Sans', 'Gill Sans MT';
 }
 
 nav{
@@ -105,22 +102,14 @@ nav li:hover{
 .menu-celular ul li{
     text-align: center;
 }
-.menu-celular ul li a{
-    display: block;
-    padding: 10px 0;
-    background-color:#638F2B;
-    font-size: small;
-    text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT';
-    color: black;
-}
+
 .menu-mobile-closed{
     display: none;
 }
 .sidebar{
     margin-left: 0%;
     margin-top: 0px;
-    padding: 0;
+    padding-bottom: 0%;
     width: 20%;
     height: 100%;
     overflow:auto;
@@ -129,30 +118,177 @@ nav li:hover{
     background-size: 100%;
     position: absolute;
     
+    bottom: 0%;
+    
 
 }
 
 .redes{
     margin-top: 20%;
 }
+/*ESTILOS PARA PAGINA DE CONTACTO*/
+#Informacion{
+    width: 80%;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom: 3%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 2%;
+    margin-left: 20%;
+    background-color: #54a0d77a;
+    position: absolute;
+}
+#content .encabezados {
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+    margin-top: 3%;
+    color: black;
+    position: relative;
+    background-color: #ffffff00;
+    width: 80%;
+    margin-left: 20%;
+    padding-top: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT';
+}
+#radio{
+    font-size: small;
+    text-align: center;
+    color: #1b1c1d;
+    padding: 3%;
+    size: 10%;
+    position: relative;
+}
 
-
+footer{
+    position: fixed;
+    background: #0C3507;
+    width: 100%;
+    height:30px;
+    bottom: 0%;
+   
+}
+footer p{
+    font-size: medium;
+    color: #D0DFB9;
+    text-align: center;
+}
+/*ESTILOS PARA PANTALLAS GRANDES */
 @media (max-width: 1450px){
-    
+    #imagen-inicio{
+        display: block;
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-left: 30%;
+        margin-top: 2%;
+    }
     .sidebar div p{
         font-size:medium;
-        color:white;
+        color:#D0DFB9;
         text-align: center;
         padding: 10%;
        
+    }
+    .texto-contacto-titulo {
+        text-align: center;
+        font-size: large;
+        padding-top: 2%;
+        color: black;
+        position: relative;
+        background-color: #ffffff00;
+        font-family:'Gill Sans', 'Gill Sans MT';
+    }
+    #Informacion p{
+        text-align: justify;
+        font-size: small;
+        padding-top: 2%;
+        color: black;
+        position: relative;
+        background-color: #ffffff00;
+    
+        font-family:'Gill Sans', 'Gill Sans MT';
+    }
+    #Informacion p a {
+        text-align: left;
+        font-size: small;
+        color: black;
+        position: relative;
+        background-color: #ffffff00;
+    
+        margin-left: 5%;
+        padding-top: 5%;
+        font-family:'Gill Sans', 'Gill Sans MT';
+    }
+    
+    #formulario{
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-top: 3%;
+    }
+    label {
+        display: block;
+        font-size: medium;
+        font-style: oblique;
+      }
+    
+    .input{
+        display: block;
+        width:80%;
+        height:3%;
+        padding:1%;
+        font-size:small;
+        line-height:5%;
+        color:#1b1c1d;
+        background-color:#fff;
+        border:1px solid #ced4da;
+        border-radius:.25rem;
+        -webkit-transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .preguntas{
+        position:relative;
+        width:100%;
+        min-height:7%;
+        padding-right:20%;
+        padding-left:20px;
+        max-width:100%;}
+    .boton-formulario{
+        color:#fff;
+        background-color:#638F2B;
+        border-color:#0C3507;
+        padding: 1%;
+        height: 5%;
+        width: 30%;
+    }
+    .boton-formulario :hover{
+        color:#fff;
+        background-color:#0C3507;
+        border-color:#0C3507;
+        padding: 1%;
+        height: 5%;
+        width: 30%;
+    }
+    .boton-formulario span{
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     
 }
 
 
-
+/*ESTILOS PARA PANTALLAS PEQUEÑAS*/
 
 @media (max-width: 540px){
+    #imagen-inicio{
+        display: block;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
     .menu_escritorio{
         display: none;
     }
@@ -161,10 +297,119 @@ nav li:hover{
     }
     .sidebar div p{
         font-size:small;
-        color:white;
+        color:D0DFB9;
         text-align: center;
         padding: 10%;
        
+    }
+    .menu-celular ul li a{
+        display: block;
+        padding: 10px 0;
+        background-color:#638F2B;
+        font-size: small;
+        text-decoration: none;
+        font-family:'Gill Sans', 'Gill Sans MT';
+        color: black;
+    }
+    #menu-mobile-items ul li a{
+        font-size: small;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+    }
+    #menu-mobile-items :hover{
+    
+        background-color:#0C3507;
+    }
+    #menu-mobile-items li :hover{
+        color:#D0DFB9 ;
+    
+    }
+
+    .texto-contacto-titulo {
+        text-align: center;
+        font-size: large;
+        padding-top: 5%;
+        color: black;
+        position: relative;
+        background-color: #ffffff00;
+      
+        font-family:'Gill Sans', 'Gill Sans MT';
+    }
+    #Informacion p{
+        text-align: justify;
+        font-size: small;
+        padding-top: 3%;
+        color: black;
+        position: relative;
+        background-color: #ffffff00;
+    
+        font-family:'Gill Sans', 'Gill Sans MT';
+    }
+    #Informacion p a {
+        text-align: center;
+        font-size: small;
+        color: black;
+        position: relative;
+        background-color: #ffffff00;
+        margin-left: 15%;
+        padding-top: 10%;
+        font-family:'Gill Sans', 'Gill Sans MT';
+    }
+    
+    #formulario{
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-top: 3%;
+    }
+    label {
+        display: block;
+        font-size: medium;
+        font-style: oblique;
+      }
+    
+    .input{
+        display: block;
+        width:100%;
+        height:10%;
+        padding:1%;
+        font-size:small;
+        line-height:15%;
+        color:#1b1c1d;
+        background-color:#fff;
+        border:1px solid #ced4da;
+        border-radius:.25rem;
+        -webkit-transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .preguntas{
+        position:relative;
+        width:100%;
+        min-height:7%;
+        padding-right:20%;
+        padding-left:20px;
+        max-width:100%;
+    }
+        
+    .boton-formulario{
+        color:#fff;
+        background-color:#638F2B;
+        border-color:#0C3507;
+        padding:3%;
+        height: 5%;
+        width: 50%;
+    }
+    .boton-formulario :hover{
+        color:#fff;
+        background-color:#0C3507;
+        border-color:#0C3507;
+        padding:3%;
+        height: 5%;
+        width: 50%;
+    }
+    .boton-formulario span{
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
    
