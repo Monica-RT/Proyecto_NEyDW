@@ -129,10 +129,11 @@ h1{
     margin: 50px auto;
 }
 .Link-interno{
-    background-color: #ecf4fb;
-    color:#D0DFB9;
+    color:#ecf4fb;
     font-size: medium;
     font-weight: bold;
+    margin-bottom: 10%;
+    background: #54a0d77a;
     
         
 }
