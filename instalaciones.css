@@ -29,7 +29,7 @@ body{
 .contenido{
     background-image: url(img/campo.png);
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: 100%;
     width:100%;
     height:100%;
