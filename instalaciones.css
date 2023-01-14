@@ -64,6 +64,7 @@ nav li{
     position: relative;
     background-color: #638F2B;
     font-style: italic;
+    font-size:0;
     text-size-adjust: auto;
 }
 
