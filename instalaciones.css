@@ -128,7 +128,14 @@ h1{
     width: 80%;
     margin: 50px auto;
 }
-
+.Link-interno{
+    background-color: #ecf4fb;
+    color:#D0DFB9;
+    font-size: medium;
+    font-weight: bold;
+    
+        
+}
 body{
     background-color: #ecf4fb;
 }
@@ -304,6 +311,7 @@ footer p{
         color:#D0DFB9 ;
     
     }
+    
 >>>>>>> 0dec264936e7e1e7c66a682f9ff75c291858da7a
     h1{
         text-decoration: underline;
