@@ -19,7 +19,7 @@
 }
 body{
     background-image: url(img/campo.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: scroll;
     background-size: 100%;
     width:100%;
