@@ -13,8 +13,8 @@
 
     <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://monica-rt.github.io/Proyecto_NEyDW/">
-                <img alt="" src="https://raw.githubusercontent.com/Monica-RT/Proyecto_NEyDW/main/img/logo.png" style="max-height: 80px" />
+            <a class="navbar-item" href="index.html">
+                <img alt="" src="img/logo.png" style="max-height: 80px" />
             </a>
             <button class="navbar-burger is-warning button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
