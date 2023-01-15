@@ -97,7 +97,7 @@
                         <span class="texto-contacto-titulo">Email</span><br>
                         <a href="mailto:atencionaclientes@ranchofortuna.com.mx">atencionaclientes@ranchofortuna.com.mx</a>
                     </p>
-                    <form id="formulario"method = get action = Pag.php>
+                    <form id="formulario">
                         <div class="preguntas">
                             <label for="nombreReal">Nombre</label>
                             <input class="input" type="text" name="nombreReal">
@@ -129,15 +129,17 @@
                             <textarea class="input" name="mensaje" rows="15"></textarea>
                         </div>
                         <div class="preguntas">
-                            <button class="boton-formulario" type="submit" data-loading="Enviando..." data-send="Enviar Mensaje"><span>Enviar mensaje</span></button>
-                            <div id="feedback"></div>
+                            <button class="boton-formulario" onclick="myFunction()"><span>Enviar mensaje</span></button>
+                            <script>
+                                function myFunction() {
+                                  alert("Mensaje enviado, ¡Te responderemos pronto!");
+                                }
+                                </script>
                         </div>
                         </form>
                 </section>
             </div>
-            <script type="text/javascript" src="js/contacto.js">
-
-            </script>
+            
     
            
             
@@ -150,13 +152,11 @@
     <script src="js/pantalla.js">                   
     </script>
 
-   
+       
+</body>
    
 <footer>
     <p>©Copyright 2050 by nobody.Fecha de ultima actualizacion 14/01/2023. Responsable del sitio: Equipo 11</p>
   </footer>
 </html>
-    
-</body>
-
 
