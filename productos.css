@@ -38,6 +38,21 @@
     padding-top: 0%;
 
 }
+input{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #638F2B;
+    display: block;
+    color: #0C3507;
+    position: relative;
+    width: 50%;
+    padding: 5%;
+    margin: 5%;
+
+}
+
 
 nav{
     font-size: 0;
